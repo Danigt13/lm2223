@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 9</title>
+    <style>
+     .caja{
+     border: 2px;
+     background-color: red;
+     text-align: center;
+     }
+
+    </style>
+</head>
+<body>
+  <div class="caja">
+  <h1>Escribe tu nombre</h1>
+  
+  <input id="usuario" type= "textbox" placeholder="Nombre usuario">
+  <input id="contraseña" type= "textbox" placeholder="Contraseña">  
+  <button onclick="saludo()">Login</button>
+
+  <script>
+ function saludo() {
+var cadena =  "usuario";
+cadena = document.getElementById("usuario").value;
+var cadena1;
+cadena1 = document.getElementById("contraseña").value;
+alert('bienvenido usuario'+' '  + cadena +' ' + 'con'+' ' + 'contraseña'+' '+cadena1) ;
+
+
+ }
+
+  </script>  
+</body>
+</html>
